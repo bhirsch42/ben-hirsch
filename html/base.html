@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="../stylesheets/stylesheet.css" type="text/css" />
+</head>
+<header>
+	<title>{% block title %}Ben Hirsch{% endblock title %}</title>
+
+	<style type="text/css">
+	</style>
+</header>
+
+<body>
+	<!-- topbar -->
+	<div class="topbar">
+		<ul class="topbar">
+			<li class="topbar"><a class="topbar" href="/">Home</a></li>
+			<li class="topbar"><a class="topbar" href="/bio">Bio</a></li>
+			<li class="topbar"><a class="topbar" href="/contact">Contact</a></li>
+			<li class="topbar"><a class="topbar" href="/resume">Resumé</a></li>
+			<li class="topbar"><a class="topbar" href="/sampleworks">Sample Works</a></li>
+
+
+		</ul>
+	</div>
+
+	<div class="content-border">
+		<div class="content">
+			{% block content %}
+				Hello, world!
+			{% endblock content %}
+		</div>
+	</div>
+</body>
+
+</html>

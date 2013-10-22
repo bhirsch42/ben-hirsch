@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('DroidSans-webfont.eot');
+    src: url('DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSans-webfont.woff') format('woff'),
+         url('DroidSans-webfont.ttf') format('truetype'),
+         url('DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'droid_sansregular';
+	background-image:url(diagmonds_@2X.png)
+}
+
+div.topbar {
+	background-color: rgb(30,30,30);
+	box-shadow: 0px 0px 10px rgb(100,100,100);
+	border-radius: 10px;
+	color: white;
+	height:100px;
+	width: 800px;
+	position: relative;
+	left: 50%;
+	margin-left: -400px;
+}
+
+ul.topbar {
+	list-style: none;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100px;
+}
+
+li.topbar {
+	display: inline-block;
+	margin: 10px;
+}
+
+a.topbar {
+	text-decoration: none;
+	color: white;
+}
+
+a.topbar:hover {
+	text-decoration: underline;
+}
+
+a.in-text {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(100,100,100);
+}
+
+a.in-text:hover {
+	text-decoration: underline;
+}
+
+div.content-border {
+	position: absolute;
+	min-height: 500px;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: 10px;
+
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-radius: 10px;
+	color: black;
+}
+
+div.content {
+	display: table-cell;
+	padding: 20px;
+}
+
+iframe {
+	height: 1000px;
+	width: 700px;
+	border: 0px;
+}
+
+div.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+img.sample {
+	border-radius: 10px;
+}
