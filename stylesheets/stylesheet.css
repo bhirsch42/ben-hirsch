@@ -58,7 +58,7 @@ a.in-text:hover {
 }
 
 div.content-border {
-	position: absolute;
+	position: relative;
 	min-height: 500px;
 	width: 800px;
 	left: 50%;
@@ -89,4 +89,25 @@ div.title {
 
 img.sample {
 	border-radius: 10px;
+}
+
+div.footer {
+	color: white;
+	text-align: center;
+	font-size: 8px;
+	position: relative;
+	margin-top: 10px;
+}
+
+div.front {
+	height: 400px;
+	width: 800px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+div.indent {
+	margin-left:20px;
+	display:inline;
 }
