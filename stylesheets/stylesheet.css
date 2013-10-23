@@ -38,10 +38,13 @@ ul.topbar {
 li.topbar {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 40px;
+	margin-right: 52px;
 }
 
 a.topbar {
+	position: relative;
+	height: 100px;
+	min-height: 80px;
 	text-decoration: none;
 	color: white;
 }
