@@ -31,11 +31,14 @@ ul.topbar {
 	display: table-cell;
 	vertical-align: middle;
 	height: 100px;
+	position: relative;
+	right: 20px;
 }
 
 li.topbar {
 	display: inline-block;
-	margin: 10px;
+	vertical-align: middle;
+	margin-right: 40px;
 }
 
 a.topbar {
