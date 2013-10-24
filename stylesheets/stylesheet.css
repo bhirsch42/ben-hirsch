@@ -65,7 +65,7 @@ a.in-text:hover {
 
 div.content-border {
 	position: relative;
-	min-height: 500px;
+	min-height: 200px;
 	width: 800px;
 	left: 50%;
 	margin-left: -400px;
@@ -106,7 +106,7 @@ div.footer {
 }
 
 div.front {
-	height: 400px;
+	height: 200px;
 	width: 800px;
 	text-align: center;
 	vertical-align: middle;
