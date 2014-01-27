@@ -152,3 +152,217 @@ div.indent {
 	margin-left:20px;
 	display:inline;
 }
+
+/*
+ * Personal page
+ */
+
+div.linkbar {
+	background-color: rgb(30,30,30);
+	box-shadow: 0px 0px 10px rgb(100,100,100);
+	border-radius: 10px;
+	color: white;
+	height: 75px;
+	width: 800px;
+	position: relative;
+	left: 50%;
+	margin-left: -400px;
+}
+
+ul.linkbar {
+	list-style: none;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100px;
+	position: relative;
+	right: 35px;
+}
+
+li.linkbar {
+	display: inline-block;
+	margin-left: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px rgb(100,100,100);
+	background-color: rgb(20,20,20);
+	position: relative;
+	bottom: 10px;
+}
+
+li.linkbar:hover {
+	box-shadow: 0px 0px 10px rgb(150,150,150);
+}
+
+a.linkbar {
+	position: relative;
+	text-decoration: none;
+	color: white;
+
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	/*margin-right: 40px;*/
+	height: 50px;
+	width: 50px;
+
+}
+
+div.tsquare-head {
+	position: relative;
+	height: 30px;
+	width: 395px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+
+	background-color: rgb(30,30,30);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+
+}
+
+div.tsquare-border {
+	position: relative;
+	height: 400px;
+	width: 395px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: 0px;
+
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: black;
+	overflow: auto;
+}
+
+div.tsquare {
+	display: table-cell;
+	padding: 20px;
+}
+
+div.tsquare-title {
+	font-size: 15px;
+}
+
+div.tsquare-summary {
+	font-size: 12px;
+	color:rgb(100,100,100);
+}
+
+div.show-head {
+	position: relative;
+	height: 30px;
+	width: 395px;
+	left: 50%;
+	top: -440px;
+	margin-left: 5px;
+	margin-top: 10px;
+
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	color: rgb(30,30,30);
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+
+}
+
+div.show-border {
+	position: relative;
+	height: 400px;
+	width: 395px;
+	left: 50%;
+	top: -440px;
+	margin-left: 5px;
+	margin-top: 0px;
+
+	background-color: rgb(30,30,30);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: black;
+	overflow: auto;
+}
+
+div.show {
+	display: table-cell;
+	padding: 20px;
+}
+
+div.show-link {
+	font-size: 15px;
+}
+
+a.show-link {
+	/*position: relative;*/
+	/*text-decoration: none;*/
+	color: white;
+
+	/*display: table-cell;*/
+	/*vertical-align: middle;*/
+	/*text-align: center;*/
+	/*margin-right: 40px;*/
+	/*height: 60px;*/
+	/*width: 80px;	*/
+}
+
+div.show-time {
+	font-size: 12px;
+	color: rgb(155,155,155);
+}
+
+div.xkcd-head {
+	position: relative;
+	min-height: 30px;
+	width: 800px;
+	left: 50%;
+	top: -440px;
+	margin-left: -400px;
+	margin-top: 10px;
+
+	background-color: rgb(30,30,30);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+	color: rgb(255,255,255);
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+}
+
+div.xkcd-border {
+	position: relative;
+	min-height: 200px;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -440px;
+
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 0px 10px rgb(155,155,155);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: black;
+
+}
+
+div.xkcd {
+	display: table-cell;
+	padding: 20px;	
+}

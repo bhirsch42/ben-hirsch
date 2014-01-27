@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="../stylesheets/stylesheet.css" type="text/css" />
+</head>
+<header>
+	<title>{% block title %}Ben Hirsch{% endblock title %}</title>
+
+	<style type="text/css">
+		{% block style %}
+		{% endblock style %}
+	</style>
+</header>
+
+<body>
+	<!-- linkbar -->
+	<div class="linkbar">
+		<ul class="linkbar">
+			<li class="linkbar">
+				<a class="linkbar" href="https://www.facebook.com/" target="_blank" onclick="{{multi_tab}}">Four</a>
+			</li>
+			<li class="linkbar">
+				<a class="linkbar" href="https://www.facebook.com/">
+					<img src="http://facebook.com/favicon.ico">
+				</a>
+			</li>
+			<li class="linkbar">
+				<a class="linkbar" href="https://mail.google.com/mail/u/0/?shva=1#inbox">
+					<img src="https://mail.google.com/favicon.ico">
+				</a>
+			</li>
+			<li class="linkbar">
+				<a class="linkbar" href="http://www.youtube.com/feed/subscriptions">
+					<img src="http://www.youtube.com/favicon.ico">
+				</a>
+			</li>
+			<li class="linkbar">
+				<a class="linkbar" href="http://www.reddit.com/">
+					<img src="http://www.reddit.com/favicon.ico">
+				</a>
+			</li>
+			<li class="linkbar">
+				<a class="linkbar" href="https://login.gatech.edu/cas/login?service=https%3A%2F%2Ft-square.gatech.edu%2Fsakai-login-tool%2Fcontainer">
+					<img src="https://t-square.gatech.edu/favicon.ico">
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<!-- T-Square -->
+	<div class="tsquare-head">
+		T-Square
+	</div>
+	<div class="tsquare-border">
+		<div class="tsquare">
+			{% for title in tsquare_titles %}
+			<div class="tsquare-title">
+				{{tsquare_titles[loop.index0]}}
+			</div>
+			<div class="tsquare-summary">
+				{{tsquare_summaries[loop.index0]}}
+			</div>
+			<hr>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- TV Shows -->
+	<div class="show-head">
+		Shows
+	</div>
+	<div class="show-border">
+		<div class="show">
+			{% for title in show_titles %}
+			<div class="show-time">
+				{{show_times[loop.index0]}}
+			</div>
+			<div class="show-link">
+				<a class="show-link" href="{{show_links[loop.index0]}}">{{show_titles[loop.index0]}}</a>
+			</div>
+			<hr>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- xkcd -->
+	<div class="xkcd-head">
+		xkcd
+	</div>
+	<div class="xkcd-border">
+		<div class="xkcd">
+			{{xkcd_title}} <br>
+			{{xkcd_img}}
+		</div>
+	</div>
+
+</body>
+
+</html>

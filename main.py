@@ -16,6 +16,7 @@
 #
 import webapp2
 from Handler import *
+from PersonalHandler import *
 
 class MainHandler(Handler):
     def get(self):
@@ -47,5 +48,6 @@ app = webapp2.WSGIApplication([
     ('/resume-source', ResumeSourceHandler),
     ('/bio', BioHandler),
     ('/contact', ContactHandler),
-    ('/sampleworks', SampleWorksHandler)
+    ('/sampleworks', SampleWorksHandler),
+    ('/personal', PersonalHandler)
  ], debug=True)
