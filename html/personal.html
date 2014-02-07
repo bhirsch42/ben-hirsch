@@ -17,7 +17,7 @@
 	<div class="linkbar">
 		<ul class="linkbar">
 			<li class="linkbar">
-				<a class="linkbar" href="https://www.facebook.com/" target="_blank" onclick="{{multi_tab}}">Four</a>
+				<a class="linkbar" href="https://www.facebook.com/" target="_blank" onclick="{{multi_tab}}">Fun</a>
 			</li>
 			<li class="linkbar">
 				<a class="linkbar" href="https://www.facebook.com/">
@@ -54,15 +54,28 @@
 	</div>
 	<div class="tsquare-border">
 		<div class="tsquare">
+			{%- if logged_in -%}
 			{% for title in tsquare_titles %}
 			<div class="tsquare-title">
-				{{tsquare_titles[loop.index0]}}
+			<a class="tsquare-link" target="_blank" href={{tsquare_links[loop.index0]}}>
+					{{tsquare_titles[loop.index0]}}
+				</a>
 			</div>
 			<div class="tsquare-summary">
 				{{tsquare_summaries[loop.index0]}}
 			</div>
 			<hr>
 			{% endfor %}
+			{% else %}
+			<form method="POST">
+				Username<br>
+				<input type="text" name="username"><br>
+				<br>
+				Password<br>
+				<input type="password" name="password"><br>
+				<input type="submit">
+			</form>
+			{% endif %}
 		</div>
 	</div>
 
@@ -86,13 +99,14 @@
 
 	<!-- xkcd -->
 	<div class="xkcd-head">
-		xkcd
+		{{xkcd_title}}
 	</div>
 	<div class="xkcd-border">
-		<div class="xkcd">
-			{{xkcd_title}} <br>
-			{{xkcd_img}}
-		</div>
+		<center>
+			<div class="xkcd">
+				{{xkcd_img}}
+			</div>
+		</center>
 	</div>
 
 </body>

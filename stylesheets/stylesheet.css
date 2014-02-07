@@ -366,3 +366,11 @@ div.xkcd {
 	display: table-cell;
 	padding: 20px;	
 }
+
+a.tsquare-link {
+	color: black;
+}
+
+a.tsquare-link:visited {
+	color: rgb(155,155,155);
+}
